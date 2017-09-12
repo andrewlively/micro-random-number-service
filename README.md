@@ -36,3 +36,31 @@ You can include optional parameters with your request through the querystring:
 
 - min (Default: 1)
 - max (Default: 5)
+
+## Examples
+
+### Default
+
+```shell
+curl https://micro-random-number-service-pmgghnftey.now.sh
+```
+
+```json
+{
+  "number": 5
+}
+```
+
+### With Parameters
+
+```shell
+# Number between 10 and 100
+
+curl -L "https://micro-random-number-service-pmgghnftey.now.sh?min=10&max=100"
+```
+
+```json
+{
+  "number": 49
+}
+```
