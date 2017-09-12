@@ -15,6 +15,8 @@ function generateRandomNumber(min = 1, max = 5) {
 module.exports = (req, res) => {
   const { min, max } = query(req);
   const number = generateRandomNumber(min, max);
+  
+  res.setHeader('Access-Control-Allow-Origin', '*')
 
   send(res, 200, { number });
 };
