@@ -1,10 +1,10 @@
 {
   "name": "micro-random-number-service",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Microservice which returns a random number. Built on Zeit's micro",
   "main": "index.js",
   "scripts": {
-    "start": "micro"
+    "start": "./node_modules/.bin/micro -p ${PORT:-3000}"
   },
   "author": "Andrew Lively <andrew@lively.software>",
   "license": "MIT",
